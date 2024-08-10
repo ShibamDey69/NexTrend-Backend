@@ -1,0 +1,8 @@
+{
+  "name": "NetTrend",
+  "module": "src/index.js",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "type": "module"
+}
