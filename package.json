@@ -1,8 +1,8 @@
 {
-  "name": "NetTrend",
-  "module": "src/index.js",
+  "name": "nextrend-backend",
+  "module": "src/app.js",
+  "type": "module",
   "devDependencies": {
     "@types/bun": "latest"
-  },
-  "type": "module"
+  }
 }
