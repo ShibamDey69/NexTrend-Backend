@@ -1,7 +1,7 @@
 import fp from 'fastify-plugin';
 
 
-const authRoutes = fp(async (fastify) => {
+const categoriesRoutes = fp(async (fastify) => {
   try {
      
   } catch (error) {
@@ -10,4 +10,4 @@ const authRoutes = fp(async (fastify) => {
   }
 })
 
-export default authRoutes
+export default categoriesRoutes;

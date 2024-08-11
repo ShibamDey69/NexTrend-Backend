@@ -1,2 +1,6 @@
-run = "bun run src/index.js"
-modules = ["bun-1.1"]
+run = "bun run src/app.js"
+modules = ["bun-1.1", "nodejs-20"]
+
+[[ports]]
+localPort = 8080
+externalPort = 8080

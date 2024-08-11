@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1723407590825,
+      "tag": "0000_giant_pandemic",
+      "breakpoints": true
+    }
+  ]
+}
