@@ -1,18 +1,13 @@
-import { drizzle } from "drizzle-orm/mysql2";
-import mysql from "mysql2/promise";
 import fp from 'fastify-plugin';
 import config from '../configs/config.js';
-
+import * as userSchema from '../models/users.js';
+import { drizzle } from 'drizzle-orm/postgres-js'
+import postgres from 'postgres'
 
 const drizzlePlugin = fp (async (fastify) => {
-    const queryClient = await mysql.createConnection({
-      host: config.DB_HOST,
-      user: config.DB_USERNAME,
-      password: config.DB_PASSWORD,
-      port: config.DB_PORT,
-      database: config.DB_NAME,
-    });
-    const db = drizzle(queryClient)
+  const connectionString = config.DB_URL
+  const client = postgres(connectionString, { prepare: false })
+    const db = drizzle(client,{schema: userSchema, mode:'default'});
     fastify.decorate('db', db)
 })
 

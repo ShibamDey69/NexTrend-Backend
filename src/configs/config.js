@@ -17,4 +17,9 @@ export default {
     EMAIL_PASSWORD: process.env.EMAIL_PASSWORD,
     EMAIL_FROM: process.env.EMAIL_FROM,
     JWT_SECRET: process.env.JWT_SECRET,
+    JWT_COOKIE_DOMAIN: process.env.JWT_COOKIE_DOMAIN,
+    JWT_COOKIE_PATH: process.env.JWT_COOKIE_PATH,
+    JWT_COOKIE_HTTP_ONLY: process.env.JWT_COOKIE_HTTP_ONLY,
+    JWT_COOKIE_SAME_SITE: process.env.JWT_COOKIE_SAME_SITE,
+    ENCRYPTION_KEY: process.env.ENCRYPTION_KEY
 }

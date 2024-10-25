@@ -1,4 +1,3 @@
-
 const errorCodes = {
   BAD_REQUEST: {
     statusCode: 400,
@@ -40,6 +39,11 @@ const errorCodes = {
     code: 'EMAIL_ALREADY_EXISTS',
     message: 'An account with this email already exists. Please login or use a different email.',
   },
+  EMAIL_NOT_VERIFIED: {
+    statusCode: 401,
+    code: 'EMAIL_NOT_VERIFIED',
+    message: 'Your email address has not been verified. Please verify your email to proceed.',
+  },
   ITEM_OUT_OF_STOCK: {
     statusCode: 409,
     code: 'ITEM_OUT_OF_STOCK',
@@ -76,6 +80,5 @@ const errorCodes = {
     message: 'The server did not receive a timely response from the upstream server.',
   },
 };
-
 
 export default errorCodes;

@@ -2,17 +2,29 @@
   "name": "nextrend-backend",
   "module": "src/app.js",
   "type": "module",
+  "scripts": {
+    "gen": "bun drizzle-kit generate --config drizzle.config.js",
+    "mig": "bun drizzle-kit migrate --config drizzle.config.js",
+    "start": "bun src/app.js"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "drizzle-kit": "^0.24.0",
     "pino-pretty": "^11.2.2"
   },
   "dependencies": {
+    "@fastify/cookie": "^9.3.1",
     "@fastify/jwt": "^8.0.1",
+    "bcryptjs": "^2.4.3",
+    "date-fns": "^3.6.0",
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.33.0",
     "fastify": "^4.28.1",
     "fastify-plugin": "^4.5.1",
-    "mysql2": "^3.11.0"
+    "http-status-codes": "^2.3.0",
+    "mysql2": "^3.11.0",
+    "nodemailer": "^6.9.14",
+    "postgres": "^3.4.4",
+    "uuid": "^10.0.0"
   }
 }
